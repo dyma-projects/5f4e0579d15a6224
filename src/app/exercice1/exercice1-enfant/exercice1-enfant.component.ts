@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { Action } from 'rxjs/internal/scheduler/Action';
 
 @Component({
   selector: 'app-exercice1-enfant',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exercice1EnfantComponent implements OnInit {
 
+  @Output('updateResult')
+  public updateR : EventEmitter<number> = new EventEmitter();
+  @Input()
+  public result : number;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public updateResult(action : number) : void {
+    this.updateR.emit(action);
   }
 
 }

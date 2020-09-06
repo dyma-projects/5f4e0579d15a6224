@@ -15,7 +15,7 @@ Pour lancer l'application il est d'abord nécessaire d'installer les dépendance
 Puis lancer le serveur de développement avec : 
 
 `ng serve`
-
+ 
 ## Objectifs
 [ ] . Dans le composant 'exercice1' : Utilisez les décorateurs Output et Input pour faire fonctionner le compteur ( en utilisant les éléments html existants ). Pensez à afficher la valeur du compteur également dans le composant exercice1-enfant.
 
